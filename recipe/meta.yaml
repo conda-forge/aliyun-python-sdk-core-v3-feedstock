@@ -1,5 +1,5 @@
 {% set name = "aliyun-python-sdk-core-v3" %}
-{% set version = "2.13.11" %}
+{% set version = "2.13.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 43228af216096b876b88abaf756bc9b9264663a83b620d22e902b2c269a1ab05
+  sha256: 427f27f420d3d88577788f703e2ee1b2f804e9ce645a2e175dafe9c56d339b3c
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   home: https://github.com/aliyun/aliyun-openapi-python-sdk
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'The core module of Aliyun Python SDK.'
+  summary: The core module of Aliyun Python SDK.
 
   description: |
     The Alibaba Cloud Python Software Development Kit (SDK) allows you to
